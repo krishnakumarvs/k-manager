@@ -1,3 +1,187 @@
-<div>
-	hii
+<div class="home-title">
+    <span class="header-back-button-span" ng-if="home.operation" ng-click="home.backButtonClick()">
+        <img class="header-back-button" src="img/back-issues-arrow-left.png">
+    </span>
+    <div class="capitalize">{{home.pageTitle}}
+    </div>
+</div>
+<div class="row home-page-button-row">
+    <div class="col-xs-2">
+    </div>
+    <div class="col-xs-8">
+        <!-- Menu -->
+        <div ng-if="!home.operation" class="margin-top-general">
+            <div class="">
+                <button ng-click="home.startOperation('add_income')" type="button" class="btn btn-block btn-success">ADD INCOME
+                </button>
+            </div>
+            <div class="margin-top-button-4">
+                <button ng-click="home.startOperation('add_outcome')" type="button" class="btn btn-block btn-warning">ADD OUTCOME
+                </button>
+            </div>
+            <div class="margin-top-button-4">
+                <button ng-click="home.startOperation('take_kadam')" type="button" class="btn btn-block btn-danger">TAKE KADAM
+                </button>
+            </div>
+            <div class="margin-top-button-4">
+                <button ng-click="home.startOperation('give_kadam')" type="button" class="btn btn-block btn-info">GIVE KADAM
+                </button>
+            </div>
+        </div>
+        <!-- Add income tab -->
+        <div ng-if="home.currentOperation == 'add_income' " class="add-income-tab margin-top-general">
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>Amount</span>
+                </div>
+                <div class="col-xs-8">
+                    <input class="full-width" type="tel" placeholder="0" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>From</span>
+                </div>
+                <div class="col-xs-8">
+                    <select class="width-80">
+                        <option>Salary</option>
+                        <option>Mummy</option>
+                    </select>
+                    <span class="float-right">
+                        <img class="add-icon-add-income" src="img/plus-icon.png">
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>Date</span>
+                </div>
+                <div class="col-xs-8">
+                    <input class="full-width" ng-model="home.operationDate" type="date">
+                </div>
+            </div>
+            <div class="row align-center">
+                <div>
+                    <img class="icon-submit-income" src="img/add-icon.png">
+                </div>
+            </div>
+        </div>
+
+        <!--  Add outcome tab (copy of add income)  -->
+        <div ng-if="home.currentOperation == 'add_outcome' " class="add-income-tab margin-top-general">
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>Amount</span>
+                </div>
+                <div class="col-xs-8">
+                    <input class="full-width" type="tel" placeholder="0" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>For</span>
+                </div>
+                <div class="col-xs-8">
+                    <select class="width-80">
+                        <option>Food</option>
+                        <option>Toys</option>
+                    </select>
+                    <span class="float-right">
+                        <img class="add-icon-add-income" src="img/plus-icon.png">
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>Date</span>
+                </div>
+                <div class="col-xs-8">
+                    <input class="full-width" ng-model="home.operationDate" type="date">
+                </div>
+            </div>
+            <div class="row align-center">
+                <div>
+                    <img class="icon-submit-income" src="img/add-icon.png">
+                </div>
+            </div>
+        </div>
+        <!--  Take kadam tab  -->
+        <div ng-if="home.currentOperation == 'take_kadam' " class="add-income-tab margin-top-general">
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>Amount</span>
+                </div>
+                <div class="col-xs-8">
+                    <input class="full-width" type="tel" placeholder="0" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>From</span>
+                </div>
+                <div class="col-xs-8">
+                    <select class="width-80">
+                        <option>Jobin</option>
+                        <option>Amma</option>
+                    </select>
+                    <span class="float-right">
+                        <img class="add-icon-add-income" src="img/plus-icon.png">
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>Date</span>
+                </div>
+                <div class="col-xs-8">
+                    <input class="full-width" ng-model="home.operationDate" type="date">
+                </div>
+            </div>
+            <div class="row align-center">
+                <div>
+                    <img class="icon-submit-income" src="img/add-icon.png">
+                </div>
+            </div>
+        </div>
+        <!--  Give kadam  -->
+        <div ng-if="home.currentOperation == 'give_kadam' " class="add-income-tab margin-top-general">
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>Amount</span>
+                </div>
+                <div class="col-xs-8">
+                    <input class="full-width" type="tel" placeholder="0" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>To</span>
+                </div>
+                <div class="col-xs-8">
+                    <select class="width-80">
+                        <option>Surya</option>
+                        <option>Manoj</option>
+                    </select>
+                    <span class="float-right">
+                        <img class="add-icon-add-income" src="img/plus-icon.png">
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>Date</span>
+                </div>
+                <div class="col-xs-8">
+                    <input class="full-width" ng-model="home.operationDate" type="date">
+                </div>
+            </div>
+            <div class="row align-center">
+                <div>
+                    <img class="icon-submit-income" src="img/add-icon.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+    </div>
 </div>

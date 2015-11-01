@@ -1,0 +1,88 @@
+body {
+    background-color: #013BFF;
+    color: white;
+}
+
+input,
+select {
+    color: black !important;
+    height: 30px !important
+}
+
+.align-right {
+    text-align: right !important;
+}
+
+.align-center {
+    text-align: center !important;
+}
+
+.home-title {
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0px;
+    position: absolute;
+    /* display: block; */
+    width: 100% !important;
+}
+
+.home-page-button-row {
+    padding-top: 42px;
+    background-color: rgba(0, 0, 0, 0.54);
+    padding-bottom: 20px;
+    border-radius: 82px;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.width-80 {
+    width: 80% !important;
+}
+
+.margin-top-button-4 {
+    margin-top: 4px;
+}
+
+.header-back-button {
+    height: 20px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.header-back-button:hover {}
+
+.header-back-button-span {
+    float: left;
+    cursor: pointer;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.add-icon-add-income {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.icon-submit-income {
+    height: 60px;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+
+.margin-top-general {
+    margin-top: 30px;
+}
+
+.add-income-tab .row {
+    margin-top: 6px!important;
+}
+
+.capitalize {
+    text-transform: uppercase;
+}
