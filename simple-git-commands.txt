@@ -1,0 +1,13 @@
+git init
+
+git add FILENAME
+
+git diff
+
+git commit -m "description of change"
+
+git log
+(see log)
+
+(pushing file)
+git push origin master
