@@ -35,7 +35,7 @@
                     <span>Amount</span>
                 </div>
                 <div class="col-xs-8">
-                    <input class="full-width" type="tel" placeholder="0" />
+                    <input ng-model="home.add_income.amount" class="full-width" type="tel" placeholder="0" />
                 </div>
             </div>
             <div class="row">
@@ -43,7 +43,7 @@
                     <span>From</span>
                 </div>
                 <div class="col-xs-8">
-                    <select class="width-80">
+                    <select class="width-80" ng-model="home.add_income.from_name">
                         <option>Salary</option>
                         <option>Mummy</option>
                     </select>
@@ -57,12 +57,12 @@
                     <span>Date</span>
                 </div>
                 <div class="col-xs-8">
-                    <input class="full-width" ng-model="home.operationDate" type="date">
+                    <input class="full-width" ng-model="home.add_income.created" type="date">
                 </div>
             </div>
             <div class="row align-center">
                 <div>
-                    <img class="icon-submit-income" src="img/add-icon.png">
+                    <img ng-click="home.addIncome()" class="icon-submit-income" src="img/add-icon.png">
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                     <span>Amount</span>
                 </div>
                 <div class="col-xs-8">
-                    <input class="full-width" type="tel" placeholder="0" />
+                    <input ng-model="home.add_outcome.amount" class="full-width" type="tel" placeholder="0" />
                 </div>
             </div>
             <div class="row">
@@ -82,7 +82,7 @@
                     <span>For</span>
                 </div>
                 <div class="col-xs-8">
-                    <select class="width-80">
+                    <select ng-model="home.add_outcome.for_name" class="width-80">
                         <option>Food</option>
                         <option>Toys</option>
                     </select>
@@ -96,12 +96,12 @@
                     <span>Date</span>
                 </div>
                 <div class="col-xs-8">
-                    <input class="full-width" ng-model="home.operationDate" type="date">
+                    <input ng-model="home.add_outcome.created" class="full-width" ng-model="home.operationDate" type="date">
                 </div>
             </div>
             <div class="row align-center">
                 <div>
-                    <img class="icon-submit-income" src="img/add-icon.png">
+                    <img ng-click="home.addOutcome()" class="icon-submit-income" src="img/add-icon.png">
                 </div>
             </div>
         </div>
